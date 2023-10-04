@@ -12,7 +12,7 @@ currify_verb <- function(verb) {
 #' @export
 `%.%` <- function(g, f) function(...) g(f(...))
 #' @export
-`%|%` <- function(f, g) g %.% f
+`%;%` <- function(f, g) g %.% f
 
 selecting   <- currify_verb(dplyr::select)
 #' @export

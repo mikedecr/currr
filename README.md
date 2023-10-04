@@ -38,6 +38,6 @@ mtcars |> group_by(am) |> filter(mpg == max(mpg))
 
 # with currr, pre-defined functions are reusable and composable
 by_am = grouping(am)
-(by_am %|% flt_max_mpg)(mtcars)
+(by_am %;% flt_max_mpg)(mtcars)
 ```
 
